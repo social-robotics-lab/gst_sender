@@ -4,7 +4,7 @@
 
 ### Sota (Server)
 ```
-gst-launch-1.0 autovideosrc ! videoconvert ! videoscale ! video/x-raw,width=320,height=240 ! jpegenc ! rtpjpegpay ! rtpstreampay ! tcpserversink host=バインドするIPアドレス port=ポート番号
+gst-launch-1.0 autovideosrc ! videoconvert ! videoscale ! video/x-raw,width=320,height=240 ! jpegenc ! rtpjpegpay ! rtpstreampay ! tcpserversink host=0.0.0.0 port=ポート番号
 ```
 バインドするIPにはSota自身のIPアドレスを指定する。
 
